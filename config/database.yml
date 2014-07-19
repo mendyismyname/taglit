@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: Taglit_development
+  database: taglit_development
   pool: 5
-  username: Taglit
+  username: taglit
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
