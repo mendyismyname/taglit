@@ -1,0 +1,85 @@
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+        
+            <div class="panel-body">
+
+                <ul id="filters" class="media-filter">
+                    <!-- <li><a href="#" data-filter="*"> All</a></li> -->
+                    <li><a href="#" data-filter=".logos">Logos</a></li>  
+                    <li><a href="#" data-filter=".fonts">Fonts</a></li>      
+                    <li><a href="#" data-filter=".documents">Documents</a></li>
+                </ul>
+
+
+
+                <div id="gallery" class="media-gal">
+
+                    <div class="logos item " >
+                        
+                        <img src="/images/brand/logos/logoprint.jpg" alt="" />
+                            <p class="desc">Logos_Pack_Print.zip</p>
+                            <button class='imgbutton'><a href="Logos_Pack_Print.zip" target="_blank" download="Logos_Pack_Print.zip">Download</a></button>
+                        <p>Logo Pack | Print</p>
+                    </div>
+
+                    <div class="logos item " >
+                        <img src="/images/brand/logos/logoweb.jpg" alt="" />
+                            <p class="desc">Logos_Pack_Web.zip</p>
+                            <button class='imgbutton'><a href="Logos_Pack_Web.zip.jpg" target="_blank" download="Logos_Pack_Web.zip">Download</a></button>
+                        <p>Logo Pack | Web</p>
+                    </div>
+
+                    <div class="logos item " >
+                        <img src="/images/brand/logos/logofullh.jpg" alt="" />
+                            <p class="desc">Full_Colored_Logo_Horizontal.zip</p>
+                            <button class='imgbutton'><a href="Full_Colored_Logo_Horizontal.zip" target="_blank" download="Full_Colored_Logo_Horizontal.zip">Download</a></button>
+                        <p>Colored Logo | Horizontal</p>
+                    </div>
+
+                    <div class="logos item " >
+                        <img src="/images/brand/logos/logofulls.jpg" alt="" />
+                            <p class="desc">Full_Colored_Logo_Stacked.zip</p>
+                            <button class='imgbutton'><a href="/images/brand/logos/lpp_lg.jpg" target="_blank" download="Full_Colored_Logo_Stacked.zip">Download</a></button>
+                        <p>Colored Logo | Stacked</p>
+                    </div>
+
+                    <div class="logos item " >
+                        <img src="/images/brand/logos/logosolidh.jpg" alt="" />
+                            <p class="desc"> Solid_Logos_Horizontal.zip</p>
+                            <button class='imgbutton'><a href="Solid_Logos_Horizontal.zip" target="_blank" download="Solid_Logos_Horizontal.zip">Download</a></button>
+                        <p> Solid Logo | Horizontal</p>
+                    </div>
+
+                    <div class="logos item " >
+                        <img src="/images/brand/logos/logosolids.jpg" alt="" />
+                            <p class="desc"> Solid_Logos_Stacked.zip</p>
+                            <button class='imgbutton'><a href="Solid_Logos_Stacked.zip" target="_blank" download="Solid_Logos_Stacked.zip">Download</a></button>
+                        <p>Solid Logo | Stacked </p>
+                    </div>
+
+                    <% cloud.ls('/app_dir/Brand/Fonts/Preview').each do |cloud_item| %>
+                        <% image = cloud.ls(cloud_item.path)[0] %>
+                        <div class="fonts item" >
+                            <img src='' alt="" />
+                            <!-- = thumb(image.share_url.url) %> -->
+                                <p class="desc"></p>
+                                <!-- < File.basename(ls(image.path)[0].path) %> -->
+                                <button class='imgbutton'><a href=<%= image.share_url.url %> target="_blank">Download</a></button>
+                            <p>Font | </p>
+                             <!-- File.basename(ls(image.path)[0].path, '/app_dir/Brand/Fonts/Preview/gillsans.png'.match(/\.\w+/).to_s) %> -->
+                        </div>
+                    <% end %>
+
+                    <div class="documents item " >
+
+                        <img src="/images/brand/documents/guideline.jpg" alt="" />
+                            <p class="desc"> Brand_Guidlines.pdf</p>
+                            <button class='imgbutton'><a href="Brand_Guidelines.pdf" target="_blank" download="Brand_Guidelines.pdf">Download</a></button>
+                        <p>Brand Guidlines </p>
+                    </div>
+
+            </div>
+        </section>
+    </div>
+</div>
