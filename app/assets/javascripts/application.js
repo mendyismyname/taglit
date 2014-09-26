@@ -22,13 +22,7 @@
 //= require jquery.slimscroll.min
 //= require skycons
 //= require jquery.easing.min
-//= require jquery.flot
-//= require jquery.flot.tooltip.min
-//= require jquery.flot.resize.min
-//= require jquery.flot.pie.resize
-//= require jquery.flot.animator.min
-//= require jquery.flot.growraf
-//= require dashboard
+//= require jquery.isotope
 
 //= require jquery.customSelect.min
 
@@ -52,6 +46,29 @@
 // <script src="js/dashboard.js"></script>
 // <!--common script init for all pages-->
 // <script src="js/scripts.js"></script>
+$(document).on('ready page:change', function () {
+   $(function() {
+        var $container = $('#gallery');
+        $container.isotope({
+            itemSelector: '.item',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
 
+
+        // filter items when filter link is clicked
+        $('#filters a').click(function() {
+            var selector = $(this).attr('data-filter');
+            $container.isotope({filter: selector});
+            return false;
+        });
+    });
+});
+
+
+   
 
 

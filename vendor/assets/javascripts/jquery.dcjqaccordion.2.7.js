@@ -25,7 +25,7 @@
 			autoClose    : true,
 			autoExpand	 : false,
 			speed        : 'slow',
-			saveState	 : true,
+			saveState	 : false,
 			disableLink	 : true,
 			showCount : false,
 //			cookie	: 'dcjq-accordion'

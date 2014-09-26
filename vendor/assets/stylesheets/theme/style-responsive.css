@@ -23,23 +23,26 @@
     .media-filter {
         margin: 25px 0;
     }
+    a.logo{
+        float:none;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  .header{
-    position: relative! important;
-    margin-top: 80px ! important;
-}
+    .header{
+        position: relative! important;
+        margin-top: 80px ! important;
+    }
     .merge-header{
         margin-right: 0px !important;
     }
-.brand{
-    width: 100%;
-    float: none;
-    position: fixed;
-    top: 0px;
-    z-index: 1005;
-}
+    .brand{
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        z-index: 1005;
+        text-align: center;
+    }
     .sidebar-toggle-box{
         right: 10px;
     }
@@ -62,6 +65,7 @@
     }
     #main-content{
         margin-left: 0px;
+        padding:40px !important;
     }
     /*calendar*/
     .fc-button-inner {
@@ -134,6 +138,9 @@
     .media-filter + .pull-right, .media-filter + .pull-right + .btn  {
         float: left !important;
     }
+    a.logo{
+        float:none;
+    }
 }
 @media (max-width:767px){
     #sidebar{
@@ -198,6 +205,7 @@
         position: fixed;
         top: 0px;
         z-index: 1005;
+        text-align: center;
     }
     .sidebar-toggle-box{
         right: 10px;
@@ -221,6 +229,7 @@
     }
     #main-content{
         margin-left: 0px;
+        padding:20px !important;
     }
     .notify-row{
         float: none;
@@ -320,6 +329,12 @@
     .media-filter li a {
         margin-bottom: 10px;
         display: inline-block;
+    }
+    a.logo{
+        float:none;
+    }
+    .notify-row{
+        display: none;
     }
 }
 

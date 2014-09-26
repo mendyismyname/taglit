@@ -8,9 +8,26 @@
     <%= csrf_meta_tags %>
   </head>
 <body>
-  <%= render 'partials/navbar' %> 
-  
-  <%= yield %>
+  <section id="container">
+    <!--header start-->
+
+
+
+    <header class="header fixed-top">
+      <div class="navbar-header">
+  <%= render 'partials/navbar' %>
+  </div>
+  </header> 
+
+  <section id="main-content">
+        <section class="wrapper">
+        <!-- page start-->
+          <%= yield %>
+        <!-- page end-->
+        </section>
+    </section>
+    <%= render 'partials/rightbar' %>
+</section>
 
 </body>
 </html>
