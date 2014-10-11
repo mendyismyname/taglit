@@ -1,8 +1,8 @@
 class CloudDropbox
-  def dropbox
-    @dropbox = Dropbox::API::Client.new(:token  => ENV["DROPBOX_TOKEN"], :secret => ENV["DROPBOX_SECRET"])
-    self
-  end 
+  # def dropbox
+  #   @dropbox = Dropbox::API::Client.new(:token  => ENV["DROPBOX_TOKEN"], :secret => ENV["DROPBOX_SECRET"])
+  #   self
+  # end 
 
   def box
     session = RubyBox::Session.new({
@@ -13,13 +13,13 @@ class CloudDropbox
     @box = RubyBox::Client.new(session)
   end
 
-  def ls(directory)
-    @dropbox.ls directory
-  end
+  # def ls(directory)
+  #   @dropbox.ls directory
+  # end
 
-  def thumb(path)
-    object = LinkThumbnailer.generate(path)
-    object.images.first.src.to_s
-  end
+  # def thumb(path)
+  #   object = LinkThumbnailer.generate(path)
+  #   object.images.first.src.to_s
+  # end
 end
 

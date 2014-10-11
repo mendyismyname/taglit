@@ -16,11 +16,11 @@
 //= require_tree
 //= require jquery-ui-1.10.1.custom.min
 //= require bootstrap.min
-//= require jquery.dcjqaccordion.2.7
+
 //= require jquery.scrollTo.min
 //= require jquery.nicescroll
 //= require jquery.slimscroll.min
-//= require skycons
+
 //= require jquery.easing.min
 //= require jquery.isotope
 
@@ -29,7 +29,6 @@
 
 
 //= require scripts
-//= require draggable-portlet
 
 
 // <script src="assets/jvector-map/jquery-jvectormap-1.2.2.min.js"></script>
