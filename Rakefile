@@ -5,6 +5,6 @@ require File.expand_path('../config/application', __FILE__)
 
 Rails.application.load_tasks
 
-require "dropbox-api"
-require "dropbox-api/tasks"
-Dropbox::API::Tasks.install
+# require "dropbox-api"
+# require "dropbox-api/tasks"
+# Dropbox::API::Tasks.install
