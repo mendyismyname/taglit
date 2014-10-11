@@ -61,7 +61,7 @@
                     <% cloud.ls('/app_dir/Brand/Fonts/Preview').each do |cloud_item| %>
                         <% image = cloud.ls(cloud_item.path)[0] %>
                         <div class="fonts item" >
-                            <img src='' alt="" />
+                            <img src='<%= thumb(image.share_url.url) %>' alt="" />
                             <!-- = thumb(image.share_url.url) %> -->
                                 <p class="desc"></p>
                                 <!-- < File.basename(ls(image.path)[0].path) %> -->

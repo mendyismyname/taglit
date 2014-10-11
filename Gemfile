@@ -30,7 +30,7 @@ gem 'figaro'
 gem "omniauth-google-oauth2"
 gem 'link_thumbnailer'
 gem 'pry'
-gem "dropbox-api"
+gem 'ruby-box'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
