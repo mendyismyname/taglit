@@ -5,6 +5,7 @@ gem 'better_errors', '~> 1.1.0'
 gem 'rails', '4.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
+gem 'devise'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,7 +31,7 @@ gem 'figaro'
 gem "omniauth-google-oauth2"
 gem 'link_thumbnailer'
 gem 'pry'
-gem 'ruby-box'
+# gem 'ruby-box'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

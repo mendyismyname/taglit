@@ -1,0 +1,25 @@
+ <section id="container">
+  <header class="header fixed-top">
+    <div class="navbar-header">
+      <div class="brand ">
+        <a href="/" class="logo">
+          <img alt="Logo" src="/images/logo.png">
+        </a>
+      </div>
+      <div class="nav notify-row">
+        <h4>Global Resource Center<span style="font-size:10px;color:grey;"> beta</span>
+        </h4>
+      </div>
+      <div class="top-nav clearfix">
+        <ul class="nav pull-right top-menu">
+          <li><span class="username">&nbsp;
+            <%= link_to( destroy_user_session_path, :method => :delete) do %> 
+            <i class="fa fa-lock"></i>
+            <% end %>
+          </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header> 
+</section>
